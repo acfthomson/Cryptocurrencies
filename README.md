@@ -26,3 +26,18 @@ The data from Accountability Accounting needed to be cleaned in order to fit the
 
 
 ## Results
+Once [crypto_data.csv](https://github.com/acfthomson/Cryptocurrencies/tree/main/Resources) was cleaned and preprocessed, there were 532 tradable cryptcurrencies.
+
+An elbow curve was produced in order to find the best value for K.  This would be used to determine the number of clusters that should be used in the K-Means clustering algorithm.  According to the elbow curve, k=4
+
+![elbow_curve](https://user-images.githubusercontent.com/73897240/113917367-2160e000-97af-11eb-873d-3165f48cdd22.png)
+
+
+The unsupervised machine learning algorithm Principal Componenet Analysis (PCA) was used to reduce the dimensions of the cryptocurrency components to three principal components.  The following 3D scatter chart shows the cryptocurrency dataset in four clusters.
+
+![3D_plot](https://user-images.githubusercontent.com/73897240/113918097-05aa0980-97b0-11eb-9c14-440e36792f9f.png)
+
+
+The 2D scatter chart shows the each cryptocurrency from the dataset as it related to total coins mined and total coin supply.
+
+![hvplot](https://user-images.githubusercontent.com/73897240/113918608-a4cf0100-97b0-11eb-9923-c2ea84186a18.png)
